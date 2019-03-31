@@ -10,6 +10,10 @@ app.get('/hi', (req,res) =>{
     res.send('Hello '+ req.query.name )
 })
 
+app.get('/bye', (req,res) =>{
+    res.send('Goodbye '+ req.query.name )
+})
+
 app.listen(PORT, () =>{
     console.log('server started')
 })
